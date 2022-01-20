@@ -57,7 +57,7 @@ function addListAfterKeypress(event) {
 }
 
 function resetListAfterClick(e){
-	var rows = document.querySelectorAll('.row');
+	let rows = document.querySelectorAll('.row');
 	clearInputField();
 	for(i=0; i< rows.length; i++){
 		if(e.target.id === 'reset'){
@@ -68,7 +68,6 @@ function resetListAfterClick(e){
 }
 
 function listItemDone(e){
-	var i = document.querySelectorAll('i');
 	if(e.target.nodeName === 'LI'){
 	e.target.classList.toggle('done')
 	e.target.parentElement.parentElement.firstElementChild.classList.toggle('col-hide');
@@ -85,7 +84,7 @@ function listItemRemove(e){
 }
 
 function noItemsText(){
-	var emptyListText = document.querySelector('#empty-list-text');
+	let emptyListText = document.querySelector('#empty-list-text');
 	if(liLength() > 0){
 		emptyListText.classList.add('text-hide');
 	} else {
