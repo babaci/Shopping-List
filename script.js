@@ -18,12 +18,12 @@ function clearInputField(){
 }
 
 function createListElement() {
-	var divRow = document.createElement('div');
-	var divColOne = document.createElement('div');
-	var divColTwo = document.createElement('div');
-	var li = document.createElement('li');
-	var button = document.createElement('button');
-	// var i = document.createElement('i');
+	let divRow = document.createElement('div');
+	let divColOne = document.createElement('div');
+	let divColTwo = document.createElement('div');
+	let li = document.createElement('li');
+	let button = document.createElement('button');
+	// let i = document.createElement('i');
 	// li.appendChild(i);
 	// i.className = 'far fa-check-square';
 	li.appendChild(document.createTextNode(' ' + input.value));
